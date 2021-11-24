@@ -10,7 +10,7 @@
     <!--Boxicons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!--SWIPER CSS-->
-
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -20,11 +20,129 @@
 <body>
     <!--HEADER-->
     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/logo.png" alt="" class="nav__logo-img">
+                Halooween
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Quem somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#trick" class="nav__link">Doces</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Novo</a>
+                    </li>
 
+                    <a href="#" class="button button--ghost">Suporte</a>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <img src="img/nav-img.png" alt="" class="nav__img">
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </nav>
     </header>
-
+    
     <main class="main">
+         <!--Home-->
+         <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="img/home1-img.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
 
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">A Abobra "Reiza"</h4>
+                                    <span class="home__details-subtitle">A Abóbora Viva</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 Top Fantasma Mais Assustador</h3>
+                                <h1 class="home__title">UOOOO <br> DOÇURA OU <br> TRAVESSURA</h1>
+                                <p class="home__description">Olá, eu sou a Reiza, as pessoas me chamam de "El Abobra". Eu estou atualmente tentando aprender algo novo, construir sozinha minha própria bicicleta com peças feitas somente na Malásia.</p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Reserve Agora</a>
+                                    <a href="#" class="button--link button--flex">
+                                        Histórico
+                                        <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="img/home2-img.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Adino and Grahami</h4>
+                                    <span class="home__details-subtitle">Não tem palavras que discrevem eles.</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 Top Melhor Dupla</h3>
+                                <h1 class="home__title">ME DEVOLVE <br> O MEU ALGODÃO <br> DOÇE</h1>
+                                <p class="home__description">Adino pegou o algodão doce do seu irmão e comeu tudo com uma mordida só, um animal fominto. Grahami não pode mais conter a sua raiva com Adino.</p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Reserve Agora</a>
+                                    <a href="#" class="button--link button--flex">
+                                        Histórico
+                                        <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="img/home3-img.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Capitão Sem</h4>
+                                    <span class="home__details-subtitle">Veterano Fantasma Assustador</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 Top Fantasma assustador</h3>
+                                <h1 class="home__title">REAPARECER <br> O CRÂNIO <br> ASSUSTADOR</h1>
+                                <p class="home__description">Em busca do cachorrinho fofo, o Capitão Sem voltou de sua morte trágica. Com o seu certificado de poder de Hogwarts, ele promete ser um héroi para todos os fantasmas.</p>
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Reserve Agora</a>
+                                    <a href="#" class="button--link button--flex">
+                                        Histórico
+                                        <i class='bx bx-right-arrow-alt button__icon' ></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
 
     <!--FOOTER-->
@@ -39,7 +157,7 @@
     <script src=""></script>
 
     <!--SWIPER JS-->
-    <script src=""></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!--MAIN JS-->
     <script src="js/main.js"></script>
