@@ -28,7 +28,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-/*Home Swiper*/
+/*=============== Home Swiper ===============*/
 let homeSwiper = new Swiper(".home-swiper", {
     spaceBetween: 30,
     loop: 'true',
@@ -45,3 +45,10 @@ function scrollHeader(){
     if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+/*=============== New Swipe ===============*/
+let newSwiper = new Swiper(".new-swiper", {
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    loop: 'true',
+});
